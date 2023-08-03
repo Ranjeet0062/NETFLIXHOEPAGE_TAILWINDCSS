@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.singnpopup{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+    z-index: 50;
+}
+.containruser ::placeholder {
+    color: white;
+}
+
+.containt {
+    height: calc("90vh-86px");
+}
+
+.gradiand2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(black, transparent, black);
+
+}
+
+@media screen and (max-width: 750px) {
+    .textcss {
+        text-align: center;
+    }
+
+    .textsize{
+        font-size: 2.25rem
+            /* 36px */
+        ;
+        line-height: 2.5rem
+            /* 40px */
+        ;
+    }
+
+  .ptagtextsize{
+        font-size: 1.25rem
+            /* 20px */
+        ;
+        line-height: 1.75rem
+            /* 28px */
+        ;
+    }
+    .maintitle{
+        padding: 0 10px 0 10px;
+    }
+    .minfooter{
+        padding: 0 0 0 54px;
+    }
+    .linkfooter{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width: 450px){
+    .linkfooter{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
